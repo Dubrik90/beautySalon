@@ -1,4 +1,5 @@
 {
+	"homepage": "https://Dubrik90.github.io/beautySalon/",
 	"name": "fls-start",
 	"version": "1.0.0",
 	"description": "Start template with Gulp and Webpack",
@@ -12,7 +13,7 @@
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fogulp deplonts": "gulp fonts --rewrite",
-		"deploy": "yFTP --build",
+		"deploy": "gh-pages -d dist",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js"
@@ -22,6 +23,7 @@
 		"css-loader": "latest",
 		"del": "latest",
 		"file-include-webpack-plugin-replace": "latest",
+		"gh-pages": "^4.0.0",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
