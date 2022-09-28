@@ -1,0 +1,13 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+
+.title-main {
+    @extend %mer;
+    @include adaptiveValue("font-size", 48, 29);
+    line-height: math.div(60, 48);
+}
+
+.text-main {
+    @include adaptiveValue("font-size", 18, 16);
+    line-height: math.div(35, 18);
+}

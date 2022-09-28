@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="mainpage">
+			<section class="mainpage__preview preview">
+				<div data-fullscreen class="preview__container preview__container_wide">
+					<div class="preview__image-ibg">
+						<img src="@img/main/preview/bg.jpg" alt="gerl">
+					</div>
+					<div class="preview__content content-preview">
+						<div class="content-preview__boby">
+							<div class="content-preview__title">Салон красоты </div>
+							<div class="content-preview__text">Мы создаем настроение.</div>
+							<a data-goto="form" href="#" class="content-preview__button button">Записаться</a>
+						</div>
+						<div data-da=".menu__body,767,98" class="content-preview__link">
+							<a class="content-preview__vk _icon-vk" href="#"></a>
+							<a class="content-preview__instagram _icon-instagram" href="#"></a>
+							<a class="content-preview__facebook _icon-facebook" href="#"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__visibility visibility">
+				<div class="visibility__container">
+					<div class="visibility__content content-visibility">
+						<div class="content-visibility__title title-main ">Добро пожаловать в наш салон</div>
+						<div data-showmore="items" class="content-visibility__body body-visibility">
+							<div data-showmore-content="2" class="body-visibility__content">
+								<p class="body-visibility__text text-main">Салон красоты «Шарм» — это пространство
+									красоты и стиля! Наше кредо: создавать настроение.
+								</p>
+								<p class="body-visibility__text text-main">Наш салон предоставляет весь спектр самых
+									популярных услуг — это визаж, уход за бровями
+								</p>
+								<p class="body-visibility__text text-main">Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Temporibus sint corporis quidem nemo iusto dolorem, officiis
+								</p>
+								<p class="body-visibility__text text-main">Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Temporibus sint corporis quidem nemo iusto dolorem, officiis
+								</p>
+								<p class="body-visibility__text text-main">Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Temporibus sint corporis quidem nemo iusto dolorem, officiis
+								</p>
+								<p class="body-visibility__text text-main">Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Temporibus sint corporis quidem nemo iusto dolorem, officiis
+								</p>
+							</div>
+							<button data-showmore-button type="button" class="body-visibility__more">
+								<span>читать далее</span>
+								<span>Скыть</span></button>
+						</div>
+					</div>
+					<div class="visibility-video video">
+						<video class="video__item" src="files/atoms.mp4"></video>
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__services services">
+				<div class="services__container">
+					<div class="services__title title-main">Услуги</div>
+					<div class="services__text text-main">Создай свой образ и стиль вместе с нами </div>
+					<div class="services__service service">
+						<div class="service__card card-service">
+							<div class="card-service__body">
+								<div class="card-service__image">
+									<a href="#"><img src="@img/servises/01.jpg" alt="gerl"></a>
+									<p class="card-service__text">Визаж</p>
+								</div>
+								<p class="card-service__text-hover">Подробнее</p>
+							</div>
+						</div>
+						<div class="service__card card-service">
+							<div class="card-service__body">
+								<div class="card-service__image">
+									<a href="#"><img src="@img/servises/02.jpg" alt="gerl"></a>
+									<p class="card-service__text">Ногтевой сервис</p>
+								</div>
+
+								<p class="card-service__text-hover">Подробнее</p>
+							</div>
+						</div>
+						<div class="service__card card-service">
+							<div class="card-service__body">
+								<div class="card-service__image">
+									<a href="#"><img src="@img/servises/03.jpg" alt="gerl"></a>
+									<p class="card-service__text">Визаж</p>
+								</div>
+
+								<p class="card-service__text-hover">Подробнее</p>
+							</div>
+						</div>
+						<div class="service__card card-service">
+							<div class="card-service__body">
+								<div class="card-service__image">
+									<a href="#"><img src="@img/servises/04.jpg" alt="gerl"></a>
+									<p class="card-service__text">Солярий</p>
+								</div>
+
+								<p class="card-service__text-hover">Подробнее</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__skills skills">
+				<div class="skills__container skills__container_wide">
+					<div class="skills__title title-main">Почему мы лучший салон</div>
+					<ol class="skills__list">
+						<li class="skills__item"><span>косметика лучших мировых брендов</span>- -Gehwol, OPI, Luxio,
+							Reforma</li>
+						<li class="skills__item">дезинфекция на уровне стоматологической клиники</li>
+						<li class="skills__item">профессиональная команда сертифицированных мастеров</li>
+						<li class="skills__item">индивидуальный подход к каждому клиенту</li>
+					</ol>
+				</div>
+			</section>
+			<section class="mainpage__masters masters">
+				<div class="masters__container_wide">
+					<div class="masters__container">
+						<div class="masters__tittle title-main">Мастера</div>
+						<div class="masters__pagin-body body-pagin">
+							<div class="body-pagin__text text-main">Все наши специалисты имеют сертификаты и дипломы
+							</div>
+							<div data-da=".masters__slider,767,98" class="body-pagin__nav">
+								<button type="button"
+									class="body-pagin__left swiper-button-prev _icon-arrow-left"></button>
+								<div class="body-pagin__pagination swiper-pagination"></div>
+								<button type="button"
+									class="body-pagin__right swiper-button-next _icon-arrow-right"></button>
+							</div>
+						</div>
+						<div class="masters__slider">
+							<div class="masters__swiper">
+								<div class="masters__slide slide-master">
+									<div class="slide-master__front front-master">
+										<div class="front-master__image-ibg">
+											<img src="@img/masters/01.jpg" alt="Светлана Параманова">
+											<div class="front-master__back back-master">
+												<div class="back-master__title">Образование</div>
+												<div class="back-master__text">Школа красоты «Шарм», Ржевская академия
+													искусства и культуры</div>
+												<div class="back-master__practice">Опыт работы </div>
+												<div class="back-master__math">5 лет </div>
+											</div>
+										</div>
+										<div class="front-master__name">Светлана Параманова</div>
+										<div class="front-master__profession">мастер ногтевого сервиса</div>
+									</div>
+								</div>
+								<div class="masters__slide slide-master">
+									<div class="slide-master__front front-master">
+										<div class="front-master__image-ibg">
+											<img src="@img/masters/02.jpg" alt="Ирина Савельева">
+											<div class="front-master__back back-master">
+												<div class="back-master__title">Образование</div>
+												<div class="back-master__text">Школа красоты «Шарм», Ржевская академия
+													искусства и культуры</div>
+												<div class="back-master__practice">Опыт работы </div>
+												<div class="back-master__math">5 лет </div>
+											</div>
+										</div>
+										<div class="front-master__name">Ирина Савельева</div>
+										<div class="front-master__profession">мастер-бровист</div>
+									</div>
+								</div>
+								<div class="masters__slide slide-master">
+									<div class="slide-master__front front-master">
+										<div class="front-master__image-ibg">
+											<img src="@img/masters/03.jpg" alt="Елена Александрова">
+											<div class="front-master__back back-master">
+												<div class="back-master__title">Образование</div>
+												<div class="back-master__text">Школа красоты «Шарм», Ржевская академия
+													искусства и культуры</div>
+												<div class="back-master__practice">Опыт работы </div>
+												<div class="back-master__math">5 лет </div>
+											</div>
+										</div>
+										<div class="front-master__name">Елена Александрова</div>
+										<div class="front-master__profession">мастер-визажист</div>
+									</div>
+								</div>
+								<div class="masters__slide slide-master">
+									<div class="slide-master__front front-master">
+										<div class="front-master__image-ibg">
+											<img src="@img/masters/04.jpg" alt="Светлана Параманова">
+											<div class="front-master__back back-master">
+												<div class="back-master__title">Образование</div>
+												<div class="back-master__text">Школа красоты «Шарм», Ржевская академия
+													искусства и культуры</div>
+												<div class="back-master__practice">Опыт работы </div>
+												<div class="back-master__math">5 лет </div>
+											</div>
+										</div>
+										<div class="front-master__name">Светлана Параманова</div>
+										<div class="front-master__profession">мастер ногтевого сервиса</div>
+									</div>
+								</div>
+								<div class="masters__slide slide-master">
+									<div class="slide-master__front front-master">
+										<div class="front-master__image-ibg">
+											<img src="@img/masters/05.jpg" alt="Ирина Савельева">
+											<div class="front-master__back back-master">
+												<div class="back-master__title">Образование</div>
+												<div class="back-master__text">Школа красоты «Шарм», Ржевская академия
+													искусства и культуры</div>
+												<div class="back-master__practice">Опыт работы </div>
+												<div class="back-master__math">5 лет </div>
+											</div>
+										</div>
+										<div class="front-master__name">Ирина Савельева</div>
+										<div class="front-master__profession">мастер-бровист</div>
+									</div>
+								</div>
+								<div class="masters__slide slide-master">
+									<div class="slide-master__front front-master">
+										<div class="front-master__image-ibg">
+											<img src="@img/masters/06.jpg" alt="Елена Александрова">
+											<div class="front-master__back back-master">
+												<div class="back-master__title">Образование</div>
+												<div class="back-master__text">Школа красоты «Шарм», Ржевская академия
+													искусства и культуры</div>
+												<div class="back-master__practice">Опыт работы </div>
+												<div class="back-master__math">5 лет </div>
+											</div>
+										</div>
+										<div class="front-master__name">Елена Александрова</div>
+										<div class="front-master__profession">мастер-визажист</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="mainpage__comments comments">
+				<div class="comments__container_wide">
+					<div class="comments__fon"></div>
+					<div class="comments__container">
+						<div class="comments__tittle title-main">Отзывы</div>
+						<div class="comments__pagin-body comments-pagin">
+							<div class="comments-pagin__text text-main">Мы каждый день поплняем ряды своих клиентов
+							</div>
+							<div data-da=".comments__slider, 767.98" class="comments-pagin__nav">
+								<button type="button"
+									class="comments-pagin__left swiper-button-prev _icon-arrow-left _icon-arrow-left-smol"></button>
+								<div class="comments-pagin__pagination swiper-pagination"></div>
+								<button type="button"
+									class="comments-pagin__right swiper-button-next _icon-arrow-right _icon-arrow-right-smol"></button>
+							</div>
+						</div>
+						<div class="comments__slider">
+							<div class="comments__swiper">
+								<div class="comments__slide slide-comment">
+									<div class="slide-comment__image-ibg">
+										<img src="@img/comment/01.jpg" alt="Елена Александрова">
+									</div>
+									<div class="slide-comment__content content-slide">
+										<a class="content-slide__title" href="#">Елена Александрова</a>
+										<div class="content-slide__text">
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+											клиенту, приветливый персонал, расслабляющая атмосфера. Я вибираю только
+											“Шарм”
+											и всем советую.
+										</div>
+									</div>
+								</div>
+								<div class="comments__slide slide-comment">
+									<div class="slide-comment__image-ibg">
+										<img src="@img/masters/02.jpg" alt="Елена Александрова">
+									</div>
+									<div class="slide-comment__content content-slide">
+										<a class="content-slide__title" href="#">Александра Серова </a>
+										<div class="content-slide__text">
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+											клиенту, всем советую.
+										</div>
+									</div>
+								</div>
+								<div class="comments__slide slide-comment">
+									<div class="slide-comment__image-ibg">
+										<img src="@img/masters/03.jpg" alt="Елена Александрова">
+									</div>
+									<div class="slide-comment__content content-slide">
+										<a class="content-slide__title" href="#">Александрова Елена </a>
+										<div class="content-slide__text">
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+											клиенту, приветливый персонал, расслабляющая атмосфера. Я вибираю только
+											“Шарм”
+											и всем советую.
+										</div>
+									</div>
+								</div>
+								<div class="comments__slide slide-comment">
+									<div class="slide-comment__image-ibg">
+										<img src="@img/masters/04.jpg" alt="Елена Александрова">
+									</div>
+									<div class="slide-comment__content content-slide">
+										<a class="content-slide__title" href="#">Екатерина Иванова</a>
+										<div class="content-slide__text">
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+											клиенту, приветливый персонал, расслабляющая атмосфера. Я вибираю только
+											“Шарм”
+											и всем советую.
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+											клиенту, приветливый персонал, расслабляющая атмосфера. Я вибираю только
+											“Шарм”
+											и всем советую.
+										</div>
+									</div>
+								</div>
+								<div class="comments__slide slide-comment">
+									<div class="slide-comment__image-ibg">
+										<img src="@img/masters/05.jpg" alt="Елена Александрова">
+									</div>
+									<div class="slide-comment__content content-slide">
+										<a class="content-slide__title" href="#">Анастасия Кирова</a>
+										<div class="content-slide__text">
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+
+										</div>
+									</div>
+								</div>
+								<div class="comments__slide slide-comment">
+									<div class="slide-comment__image-ibg">
+										<img src="@img/masters/06.jpg" alt="Елена Александрова">
+									</div>
+									<div class="slide-comment__content content-slide">
+										<a class="content-slide__title" href="#">Елена Александрова</a>
+										<div class="content-slide__text">
+											В этом салоне была ни раз, теперь выбираю только его. Нравиться подход к
+											клиенту, приветливый персонал, расслабляющая атмосфера. Я вибираю только
+											“Шарм”
+											и всем советую.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+			</section>
+			<section class="mainpage__instagram instagram">
+				<div class="instagram__container">
+					<div class="instagram__title title-main">Мы в Instagram</div>
+					<div class="instagram__blok blok-galery">
+						<div class="blok-galery__text">Подписывайтесь на наши новости</div>
+						<a data-da=".instagram__container,767.98" href="#" class="blok-galery__link">Подписаться</a>
+					</div>
+					<div class="instagram__items">
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/01.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/02.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/03.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/04.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/05.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/06.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/07.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+						<div class="instagram__item">
+							<a href="#" class="instagram__link link-instagram">
+								<div class="link-instagram__image-ibg">
+									<img src="@img/instagram/08.jpg" alt="фото">
+									<div class="link-instagram__back">Перейти</div>
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__form form">
+				<div class="form__container_wide">
+					<div class="form__container">
+						<div class="form__title title-main">Онлайн запись</div>
+						<div class="form__subtitle">заполните фору для записи в салон</div>
+						<form id="form" class="form__blok blok-form" action="#" method="get">
+							<div class="blok-form__lines">
+								<div class="blok-form__line">
+									<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										placeholder="Имя" class="blok-form__inp input">
+								</div>
+								<div class="blok-form__line">
+									<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+										placeholder="Телефон" class="blok-form__inp input">
+								</div>
+								<div class="blok-form__line">
+									<select required placeholder="Телефон" name="form[]" class="form">
+										<option value="">Услуга</option>
+										<option value="1">Ногтевой сервис</option>
+										<option value="2">Визаж</option>
+										<option value="3">Депиляция</option>
+										<option value="4">Солярий</option>
+									</select>
+								</div>
+								<div class="blok-form__line checkbox">
+									<input required id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+										value="1" name="form[]">
+									<label required for="c_1" class="checkbox__label _icon-checked"><span
+											class="checkbox__text">Даю согласие на обработку персональных
+											данных</span></label>
+								</div>
+								<button type="submit" class="blok-form__button button">Отправить</button>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
