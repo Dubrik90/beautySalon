@@ -1,3 +1,6 @@
+
+https://dubrik90.github.io/sharm/home.html
+
 Команды терминала
 
 Установка:
